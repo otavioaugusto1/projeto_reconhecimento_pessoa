@@ -6,7 +6,7 @@ import time
 # Carregando o modelo de detecção pré-treinado (Caffe Model)
 net = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'res10_300x300_ssd_iter_140000_fp16.caffemodel')
 
-# Classe que queremos detectar
+# Somente a classe pessoa que queremos detectar do modelo Caffe
 PERSON_CLASS = "person"
 
 # Lista com os endereços RTSP das câmeras IP instaladas na chácara
